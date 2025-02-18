@@ -1,4 +1,7 @@
 <main>
-  <h1>Hello</h1>
-  <h2>From {{ domain }}</h2>
+  <button (click)="surpriseNow()">{{surprise ? "Reset" : "Surprise me!"}}</button>
+  <div *ngIf="surprise">
+    <app-frame></app-frame>
+  </div>
+  
 </main>
